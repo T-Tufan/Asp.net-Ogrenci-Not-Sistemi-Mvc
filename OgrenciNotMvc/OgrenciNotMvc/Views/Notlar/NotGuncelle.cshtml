@@ -1,0 +1,50 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.Tbl_Notlar
+@{
+    ViewBag.Title = "SinavGuncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Not Guncelleme Sayfası</h2>
+<br />
+<form action="/Notlar/NotGuncelle" method="post">
+    <div class="form-group">
+        <input type="hidden" class="form-control" name="Not_Id" value="@Model.Not_Id">
+    </div>
+    <div class="form-group">
+        <label for="dersad">Ders ID:</label>
+        <input type="text" class="form-control" name="Ders_ID" value="@Model.Ders_Id">
+    </div>
+    <div class="form-group">
+        <label for="ogrenciid">Öğrenci ID:</label>
+        <input type="text" class="form-control" name="Ogrenci_Id" value="@Model.Ogrenci_Id">
+    </div>
+    <div class="form-group">
+        <label for="sinav1">Sınav 1</label>
+        <input type="text" class="form-control" name="Sınav1" value="@Model.Sınav1">
+    </div>
+    <div class="form-group">
+        <label for="sinav2">Sınav 2</label>
+        <input type="text" class="form-control" name="Sınav2" value="@Model.Sınav2">
+    </div>
+    <div class="form-group">
+        <label for="proje">Proje</label>
+        <input type="text" class="form-control" name="Proje" value="@Model.Proje">
+    </div>
+    <div class="form-group">
+        <label for="ortalama">Ortalama</label>
+        <input type="text" class="form-control" name="Ortalama" value="@Model.Ortalama">
+    </div>
+    <div class="form-group">
+        <label for="durum">Durum</label>
+        <input type="text" class="form-control" name="Durum" value="@Model.Durum.ToString()">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" name="Islem" value="Hesapla">Hesapla</button>
+        <button type="submit" class="btn btn-warning" name="Islem" value="NotGuncelle">Güncelle</button>
+    </div>
+    <br />
+    <div>
+        <label>Yeni Ortalama : </label>
+        <label>@ViewBag.ort</label>
+    </div>
+</form>

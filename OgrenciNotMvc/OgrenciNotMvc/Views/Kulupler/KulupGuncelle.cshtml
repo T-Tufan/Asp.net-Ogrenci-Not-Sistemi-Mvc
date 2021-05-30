@@ -1,0 +1,39 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.Tbl_Kulupler
+@{
+    ViewBag.Title = "KulupGuncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kulup Guncelle</h2>
+<br />
+@*
+    @using (Html.BeginForm("KulupGuncelle", "Kulupler", FormMethod.Post))
+    {
+            <div class="form-group">
+                @Html.LabelFor(m => m.Kulup_Ad)
+                @Html.TextBoxFor(m => m.Kulup_Ad)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Kulup_Kontenjan)
+                @Html.TextBoxFor(m => m.Kulup_Kontenjan)
+            </div>
+                @Html.HiddenFor(m => m.Kulup_Id)
+            <div>
+                <button class="btn btn-info">Güncelle</button>
+            </div>
+    }
+*@
+<form action="/Kulupler/KulupGuncelle" method="post">
+    <div class="form-group">
+        <input type="hidden" class="form-control" name="Kulup_Id" value="@ViewBag.Id" >
+    </div>
+    <div class="form-group">
+        <label for="kulupad">Kulup Ad</label>
+        <input type="text" class="form-control" name="Kulup_Ad" value="@Model.Kulup_Ad">
+    </div>
+    <div class="form-group">
+        <label for="kulupkont">Kulup Kontenjan</label>
+        <input type="text" class="form-control" name="Kulup_Kontenjan" value="@Model.Kulup_Kontenjan">
+    </div>
+    <button type="submit" class="btn btn-default">Güncelle</button>
+</form>

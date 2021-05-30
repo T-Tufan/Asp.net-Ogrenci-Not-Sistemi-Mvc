@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "YeniSinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Yeni Sınav Kayıt</h2>
+<br />
+<form action="/Notlar/SinavEkle" method="post">
+    <div class="form-group">
+        <label for="ogrenciid">Ogrenci Id:</label>
+        <input type="text" class="form-control" name="Ogrenci_Id">
+    </div>
+    <div class="form-group">
+        <label for="dersad">Ders ID:</label>
+        <input type="text" class="form-control" name="Ders_ID">
+    </div>
+    <div class="form-group">
+        <label for="sinav1">Sınav 1</label>
+        <input type="text" class="form-control" name="Sınav1">
+    </div>
+    <div class="form-group">
+        <label for="sinav2">Sınav 2</label>
+        <input type="text" class="form-control" name="Sınav2">
+    </div>
+    <div class="form-group">
+        <label for="proje">Proje</label>
+        <input type="text" class="form-control" name="Proje">
+    </div>
+    <div class="form-group">
+        <label for="ortalama">Ortalama</label>
+        <input type="text" class="form-control" name="Ortalama">
+    </div>
+    <div class="form-group">
+        <label for="durum">Durum</label>
+        <input type="text" class="form-control" name="Durum">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Sınav Ekle</button>
+    </div>
+    
+</form>

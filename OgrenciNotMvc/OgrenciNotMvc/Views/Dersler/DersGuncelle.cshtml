@@ -1,0 +1,18 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.Tbl_Dersler
+@{
+    ViewBag.Title = "DersGuncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ders Güncelleme Sayfası </h2>
+
+<form action="/Dersler/DersGuncelle" method="post">
+    <div class="form-group">
+        <input type="hidden" class="form-control" name="Ders_Id" value="@Model.Ders_Id">
+    </div>
+    <div class="form-group">
+        <label for="dersad">Ders Ad</label>
+        <input type="text" class="form-control" name="Ders_Ad" value="@Model.Ders_Ad">
+    </div>
+    <button type="submit" class="btn btn-default">Güncelle</button>
+</form>

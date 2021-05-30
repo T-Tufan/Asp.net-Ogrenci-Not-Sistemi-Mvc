@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbMvcSchoolModelStoreContainer" CdmEntityContainer="DbMvcSchoolEntities1">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DbMvcSchoolModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Dersler">
+      <EntityTypeMapping TypeName="DbMvcSchoolModel.Tbl_Dersler">
+        <MappingFragment StoreEntitySet="Tbl_Dersler">
+          <ScalarProperty Name="Ders_Id" ColumnName="Ders_Id" />
+          <ScalarProperty Name="Ders_Ad" ColumnName="Ders_Ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Kulupler">
+      <EntityTypeMapping TypeName="DbMvcSchoolModel.Tbl_Kulupler">
+        <MappingFragment StoreEntitySet="Tbl_Kulupler">
+          <ScalarProperty Name="Kulup_Id" ColumnName="Kulup_Id" />
+          <ScalarProperty Name="Kulup_Ad" ColumnName="Kulup_Ad" />
+          <ScalarProperty Name="Kulup_Kontenjan" ColumnName="Kulup_Kontenjan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Notlar">
+      <EntityTypeMapping TypeName="DbMvcSchoolModel.Tbl_Notlar">
+        <MappingFragment StoreEntitySet="Tbl_Notlar">
+          <ScalarProperty Name="Not_Id" ColumnName="Not_Id" />
+          <ScalarProperty Name="Ders_Id" ColumnName="Ders_Id" />
+          <ScalarProperty Name="Ogrenci_Id" ColumnName="Ogrenci_Id" />
+          <ScalarProperty Name="Sınav1" ColumnName="Sınav1" />
+          <ScalarProperty Name="Sınav2" ColumnName="Sınav2" />
+          <ScalarProperty Name="Proje" ColumnName="Proje" />
+          <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Ogrenci">
+      <EntityTypeMapping TypeName="DbMvcSchoolModel.Tbl_Ogrenci">
+        <MappingFragment StoreEntitySet="Tbl_Ogrenci">
+          <ScalarProperty Name="Ogrenci_Id" ColumnName="Ogrenci_Id" />
+          <ScalarProperty Name="Ogrenci_Ad" ColumnName="Ogrenci_Ad" />
+          <ScalarProperty Name="Ogrenci_Soyad" ColumnName="Ogrenci_Soyad" />
+          <ScalarProperty Name="Ogrenci_Kulup_Id" ColumnName="Ogrenci_Kulup_Id" />
+          <ScalarProperty Name="Ogrenci_Fotograf" ColumnName="Ogrenci_Fotograf" />
+          <ScalarProperty Name="Ogrenci_Cinsiyet" ColumnName="Ogrenci_Cinsiyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

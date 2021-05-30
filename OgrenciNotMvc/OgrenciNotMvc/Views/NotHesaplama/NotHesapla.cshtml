@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "NotHesapla";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Not Hesapla</h2>
+
+<div>
+    <form class="form-group" method="post">
+        <div>
+            Sınav 1 : <input type="text" name="sinav1" />
+            Sınav 2 : <input type="text" name="sinav2" />
+            Proje :   <input type="text" name="proje" />
+            <button class="btn btn-warning">Hesapla</button>
+            Ortalama : @ViewBag.Ort
+        </div>
+        
+            
+    </form>
+</div>
